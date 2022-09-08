@@ -15,6 +15,7 @@ class UserDomicilio2 extends Migration
     {
         Schema::create('user_domicilio', function (Blueprint $table) {
             $table->bigIncrements('user_id');
+            $table->string('nombre');
             $table->string('domicilio');
             $table->string('numero_exterior');
             $table->string('colonia');
